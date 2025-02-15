@@ -23,8 +23,13 @@ const Navbar = (props: Props) => {
             <p className='font-display text-[12px] md:text-xs text-muted-foreground'>Igniting Vision With Innovation</p>
         </div>
         </div>
-        <div className='flex  items-center border  rounded-full gap-1 '>
-            <span className=''><StyledButton className='px-4 py-2 rounded-l-full  before:rounded-l-full'>Contact</StyledButton></span><span className='min-w-12 border-l '> <ModeToggle className='bg-background hover:bg-muted' /></span>
+        <div className="flex items-center sm:border sm:rounded-full gap-1">
+                <StyledButton className="px-4 py-2 rounded-l-full before:rounded-l-full hidden sm:block">
+                    <span>Contact</span>
+                </StyledButton>
+            <span className="min-w-12 sm:border-l">
+                <ModeToggle className="bg-background hover:bg-muted rounded-full sm:rounded-r-full  sm:rounded-l-none" />
+            </span>
         </div>
         </div>
         <Separator className='mt-5'/>

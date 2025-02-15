@@ -50,7 +50,7 @@ const rayVariant = {
     }
 }
   return (
-    <Button variant="default" size={"default"} onClick={toggleTheme} className={cn("flex rounded-r-full  rounded-l-none px-4 !h-10 m-0 w-full",className)}>
+    <Button variant="default" size={"default"} onClick={toggleTheme} className={cn("flex  px-4 !h-10 m-0 w-full",className)}>
 <m.svg width="150" height="150" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" className={"scale-150"}>
 <m.path initial={{fillOpacity: 0, strokeOpacity: 0}} animate={theme === "dark" ? {
         fillOpacity: 0.35,

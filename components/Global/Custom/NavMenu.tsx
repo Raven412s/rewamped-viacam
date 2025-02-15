@@ -34,6 +34,8 @@ import { MenuIcon } from "lucide-react"
 import Link from "next/link"
 import * as React from "react"
 import Logo from "./Logo"
+import StyledButton from "./StyledButton"
+import { Separator } from "@/components/ui/separator"
 
 
 
@@ -82,7 +84,13 @@ export function NavMenu() {
         <Button variant="ghost" size={"icon"}><MenuIcon className="w-8 h-8"/></Button>
       </SheetTrigger>
       <SheetContent>
+        <div className="relative size-full">
         <Navigation/>
+        <div className="absolute bottom-1/3 items-center flex flex-col space-y-3 w-full">
+        <Separator className="w-full"/>
+        <StyledButton className="px-4 py-2 rounded-full before:rounded-full ">Contact Now</StyledButton>
+        </div>
+        </div>
       </SheetContent>
     </Sheet>
   </div>
