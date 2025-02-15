@@ -19,3 +19,8 @@ export type MenuItem = {
   export interface GlowProps extends ComponentPropsWithoutRef<"div"> {
     color?: string;
   }
+
+  export interface BoundedProps extends ComponentPropsWithoutRef<"div"> {
+    as?: React.ElementType  ,
+}
+

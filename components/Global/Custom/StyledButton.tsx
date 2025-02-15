@@ -1,8 +1,8 @@
 "use client"
 import React from 'react'
 import { cn } from '@/lib/utils' // Import your cn utility
-interface StyledButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
-const StyledButton = ({ children, className, ...props }: StyledButtonProps) => {
+
+const StyledButton: React.FC<React.ButtonHTMLAttributes<HTMLButtonElement>> = ({ children, className, ...props }) => {
   return (
     <button
       {...props}

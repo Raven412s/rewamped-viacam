@@ -1,10 +1,8 @@
 import { cn } from '@/lib/utils'
+import { BoundedProps } from '@/types'
 import React, { PropsWithChildren } from 'react'
 
-interface BoundedProps extends PropsWithChildren {
-    as?: React.ElementType  ,
-    className?: string,
-}
+
 
 const Bounded = ({as: Comp = 'section',className,children,...restProps}:BoundedProps ) => {
   return (

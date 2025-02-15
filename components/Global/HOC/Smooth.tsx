@@ -1,12 +1,9 @@
 "use client";
 
-import { PropsWithChildren, ReactNode, useEffect } from "react";
+import { PropsWithChildren, useEffect } from "react";
 import Lenis from "lenis";
 
-interface SmoothScrollProps extends PropsWithChildren{
-}
-
-export const SmoothScroll: React.FC<SmoothScrollProps> = ({ children }) => {
+export const SmoothScroll: React.FC<PropsWithChildren> = ({ children }) => {
   useEffect(() => {
     const lenis = new Lenis({
       lerp: 0.1,
