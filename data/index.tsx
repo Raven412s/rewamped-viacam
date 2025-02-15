@@ -427,3 +427,26 @@ export const menuItems: MenuItem[] = [
     "/image/rating/face3.jpg",
     "/image/rating/face4.jpg",
   ]
+
+  export const services = [
+    "Production",
+    "Social Media Branding & Digital Marketing",
+    "Business Services",
+    "Advertisement",
+    "Photoshoot & Videography",
+    "Content Creation",
+    "Corporate Events Management",
+    "Personal Services",
+    "Event Management",
+    "Film & Content Creation",
+    "Printing",
+    "Company Formation & Registration",
+    "Intellectual Property (IP) Services",
+    "Consultancy",
+    "Taxation & Compliance",
+    "GST Services",
+    "Company Related Other Services",
+    "Government & NGO Services",
+    "Audit & Compliance",
+    "Project & Reports"
+  ];

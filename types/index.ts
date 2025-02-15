@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ComponentPropsWithoutRef, ReactNode } from "react";
 
 export type LinkItem = {
     title: string;
@@ -11,3 +11,11 @@ export type MenuItem = {
     link?: string;
     subMenu?: MenuItem[] | LinkItem[];
   };
+
+  export interface GlowAreaProps extends ComponentPropsWithoutRef<"div"> {
+    size?: number;
+  }
+
+  export interface GlowProps extends ComponentPropsWithoutRef<"div"> {
+    color?: string;
+  }
