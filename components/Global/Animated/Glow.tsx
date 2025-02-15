@@ -1,5 +1,5 @@
 "use client";
-import { handleMouseLeave, handleMouseMove, updateGlow } from "@/Functions";
+import { handleMouseLeave, handleMouseMove, updateGlow } from "@/functions";
 import { cn } from "@/lib/utils";
 import { GlowAreaProps, GlowProps } from "@/types";
 import { CSSProperties, useEffect, useRef } from "react";

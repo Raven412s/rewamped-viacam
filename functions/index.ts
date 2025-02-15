@@ -1,3 +1,5 @@
+import * as React from "react";
+
 // functions/index.ts
 export const updateGlow = (
     latestCoords: React.MutableRefObject<{ x: number; y: number } | null>,
