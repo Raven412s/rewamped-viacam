@@ -1,6 +1,8 @@
 "use client";
 
 import MarqueeText from '@/components/Global/Animated/MarqueeText';
+import Branding from '@/components/Global/Custom/Sections/Branding';
+import TabbedOrScrollingUI from '@/components/Global/Custom/TabbedOrScrollUI';
 import Bounded from '@/components/Global/HOC/Bounded';
 import Navbar from '@/components/Global/Navbar';
 import BentoGrid from '@/components/Global/root/section1/BentoGrid';
@@ -30,11 +32,12 @@ const Home = () => {
           </p>
           <MarqueeText textArray={services} className="font-display" />
         </div>
-
         {/*Production*/}
         <HeroHeading/>
-        <Production/>
       </Bounded>
+       {/* <Branding/> */}
+        <TabbedOrScrollingUI/>
+        <Production/>
     </main>
   );
 };

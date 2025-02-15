@@ -20,7 +20,7 @@ const BentoGrid = ({ ...props }: React.HTMLAttributes<HTMLDivElement>) => {
 
         {/* What We Do Section (Moves below Logo in Single Column) */}
         <Glow color='#90E0EF' className="lg:col-span-2 rounded-xl order-2 sm:order-2 lg:order-1">
-          <Card className='flex flex-col bg-background/85'>
+          <Card className='flex flex-col bg-background/85 size-full'>
             <CardHeader>
               <h1 className="font-display font-semibold text-3xl">What We Do?</h1>
               <Separator className="bg-foreground/20" />
@@ -39,7 +39,7 @@ const BentoGrid = ({ ...props }: React.HTMLAttributes<HTMLDivElement>) => {
 
         {/* Image Section (Moves above Production Card in Single Column) */}
         <Glow className="rounded-xl lg:col-span-2 relative order-3 sm:order-3 lg:order-4" color='#90E0EF'>
-          <Card className='overflow-hidden bg-background/85'>
+          <Card className='overflow-hidden bg-background/85 size-full'>
             <CardContent className="p-0 relative">
               <img src="/image/production1.png" alt="Production scene from a web series shoot" className="-hue-rotate-45 saturate-50 w-full object-cover" />
               <div className="absolute z-20 bg-gradient-to-b from-transparent to-neutral-950 h-full w-full bottom-0"></div>
@@ -49,7 +49,7 @@ const BentoGrid = ({ ...props }: React.HTMLAttributes<HTMLDivElement>) => {
 
         {/* Production Services (Moves below Image in Single Column) */}
         <Glow className="rounded-xl order-4 sm:order-4 lg:order-3" color='#A47866'>
-          <Card className='flex flex-col bg-background/85'>
+          <Card className='flex flex-col bg-background/85 size-full'>
             <CardHeader>
               <h2 className="font-display font-semibold text-2xl">Our Production Services</h2>
               <Separator className="bg-foreground/20" />

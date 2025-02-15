@@ -56,6 +56,7 @@ const HeroHeading = () => {
         </span>
       </strong>
     </h1>
+    <p  className='text-xs text-center text-muted-foreground'>Crafting compelling brand identities and immersive cinematic experiences <br /><span className='font-semibold text-accent-foreground'>scroll down to see how we bring stories to life!</span></p>
   </div>
   )
 }

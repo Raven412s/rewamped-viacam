@@ -1,3 +1,4 @@
+import Branding from "@/components/Global/Custom/Sections/Branding";
 import { MenuItem } from "@/types";
 import { FaBuilding, FaCamera, FaGlobe, FaPrint } from "react-icons/fa"; // Import icons
 
@@ -449,4 +450,95 @@ export const menuItems: MenuItem[] = [
     "Government & NGO Services",
     "Audit & Compliance",
     "Project & Reports"
+  ];
+
+  export const brandingCardData = [
+    {
+        h1: "Social Media Branding & Digital Marketing",
+        listItems: [
+            "Social Media Strategy & Management",
+            "Advertisement Campaigns (Meta, Google, TikTok, etc.)",
+            "Content Calendar & Scheduling",
+            "Thumbnail & Banner Creation (Design to Printing)",
+        ]
+    },
+    {
+        h1: "High-Impact Content Creation",
+        listItems: [
+            "Reels & Shorts (Trending & Algorithm-Friendly Content)",
+            "Vlogs & Lifestyle Videos",
+            "YouTube (Long-Form & Mainstream Videos)",
+            "Music Videos (Professional Cinematic Production)",
+        ]
+    },
+    {
+        h1: "Professional Photography & Videography",
+        listItems: [
+            "Product Photography ",
+            "Site Photography & Video Shoots (Corporate & Personal)",
+            "Event Coverage (Weddings, Anniversaries, etc.)",
+            "Cinematic Branding Shoots for Businesses & Individuals",
+        ]
+    },
+    {
+        h1: "Corporate & Business Branding",
+        listItems: [
+            "Corporate Events Management (Seminars, Conferences,  etc.)",
+            "Brand Identity Development",
+            "Performance-Based Digital Marketing",
+            "B2B & B2C Campaigns",
+        ]
+    },
+    {
+        h1: "Personal Branding & Event Management",
+        listItems: [
+            "Personal Social Media Branding & Content Strategy",
+            "Wedding Videography & Photography",
+            "Music Recordings & Visual Storytelling",
+            "Anniversary & Special Event Coverage",
+        ]
+    },
+    {
+        h1: "Brand Consulting & Strategic Growth",
+        listItems: [
+            "Brand Identity & Positioning Strategy",
+            "Market Research & Competitive Analysis",
+            "Personalized Brand Growth Consultation",
+            "Content & Storytelling Strategy",
+        ]
+    }
+
+  ]
+
+
+  const FilmSection = () => (
+    <div className="p-6 text-center bg-red-500 text-white rounded-lg">
+      <h2 className="text-xl font-bold mb-2">🎬 Cinematic Masterpieces</h2>
+      <p className="text-sm">High-quality film production that tells compelling stories.</p>
+    </div>
+  );
+
+  const MarketingSection = () => (
+    <div className="p-6 text-center bg-green-500 text-white rounded-lg">
+      <h2 className="text-xl font-bold mb-2">📈 Growth Marketing</h2>
+      <p className="text-sm">Strategies to scale your business with performance marketing.</p>
+    </div>
+  );
+
+ export const productionSections = [
+    {
+      id: "branding",
+      title: "🔥 Digital Branding",
+      component: <Branding />,
+    },
+    {
+      id: "film",
+      title: "🎬 Cinematic Masterpieces",
+      component: <FilmSection />,
+    },
+    {
+      id: "marketing",
+      title: "📈 Growth Marketing",
+      component: <MarketingSection />,
+    },
   ];
