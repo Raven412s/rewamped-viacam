@@ -2,7 +2,7 @@
 import { handleMouseLeave, handleMouseMove, updateGlow } from "@/Functions";
 import { cn } from "@/lib/utils";
 import { GlowAreaProps, GlowProps } from "@/types";
-import React, { ComponentPropsWithoutRef, CSSProperties, useEffect, useRef } from "react";
+import { CSSProperties, useEffect, useRef } from "react";
 
 
 export const GlowArea = (props: GlowAreaProps) => {
