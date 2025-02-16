@@ -10,7 +10,7 @@ const HeroHeadlineWithSubHeadingAndGlow: React.FC<React.HTMLAttributes<HTMLDivEl
         <div className='flex relative items-center justify-center'>
           <h1 className="font-empower text-5xl w-full text-center">
             Empowering <span className="font-body bg-gradient-to-tr from-foreground to-background bg-clip-text text-transparent">Brands</span> with <br />
-            <span className="font-innovative bg-gradient-to-tr from-foreground to-background bg-clip-text text-transparent">Innovation</span> <span className="font-serif">&</span> <span className="font-strategy bg-gradient-to-r from-[#cf9781] to-[#373737] bg-clip-text text-transparent">Strategy</span>
+            <span className="font-innovative bg-gradient-to-tr from-aqua to-background bg-clip-text text-transparent">Innovation</span> <span className="font-serif">&</span> <span className="font-strategy bg-gradient-to-r from-[#cf9781] to-[#373737] bg-clip-text text-transparent">Strategy</span>
           </h1>
         </div>
         <p className='font-body text-gray-400 text-center mt-5 leading-tight text-lg'>

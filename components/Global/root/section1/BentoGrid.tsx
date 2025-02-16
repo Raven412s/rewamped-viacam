@@ -11,7 +11,7 @@ const BentoGrid = ({ ...props }: React.HTMLAttributes<HTMLDivElement>) => {
       <GlowArea className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-auto gap-4 ">
         {/* Logo Section (Moves above What We Do in Single Column) */}
         <Glow className="rounded-xl size-full order-1 sm:order-1 lg:order-2" color='#A47866'>
-          <Card className='flex items-center justify-center bg-background/85 size-full'>
+          <Card className='flex items-center justify-center size-full bg-transparent border-none'>
             <CardContent className="flex items-center size-full justify-center p-10">
               <Logo className="size-full" />
             </CardContent>

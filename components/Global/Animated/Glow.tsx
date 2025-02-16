@@ -42,7 +42,7 @@ export const Glow = (props: GlowProps) => {
     }, []);
 
     return (
-      <div ref={element} className={cn(className, "relative shadow-behind")}>
+      <div ref={element} className={cn(className, "relative ")}>
         <div
           {...rest}
           style={{
