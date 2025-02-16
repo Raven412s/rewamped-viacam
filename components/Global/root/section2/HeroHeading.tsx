@@ -12,12 +12,12 @@ const HeroHeading = () => {
             autoPlay
             muted
             loop
-            className="absolute z-[1] w-full h-full top-0 left-0 object-cover"
+            className="absolute z-[1] w-full h-full top-0 left-0 object-cover dark:hue-rotate-180 dark:brightness-200"
           >
             <source src="/videos/blue.webm" type="video/webm" />
             <source src="/videos/blue.mp4" type="video/mp4" />
           </video>
-          <span className="relative z-10 mix-blend-screen dark:mix-blend-multiply bg-background dark:bg-[#0a0a0a] text-black dark:text-white ">
+          <span className="relative z-10 mix-blend-lighten dark:mix-blend-multiply bg-background dark:bg-[#0a0a0a] text-black dark:text-white ">
             Vision
           </span>
         </span>{" "}
@@ -29,12 +29,12 @@ const HeroHeading = () => {
             autoPlay
             muted
             loop
-            className="absolute z-[1] w-full h-full top-0 left-0 object-cover"
+            className="absolute z-[1] w-full h-full top-0 left-0 object-cover dark:hue-rotate-180 dark:brightness-200"
           >
             <source src="/videos/blue.webm" type="video/webm" />
             <source src="/videos/blue.mp4" type="video/mp4" />
           </video>
-          <span className="relative z-10 mix-blend-screen dark:mix-blend-multiply bg-background dark:bg-[#0a0a0a] text-black dark:text-white ">
+          <span className="relative z-10 mix-blend-lighten dark:mix-blend-multiply bg-background dark:bg-[#0a0a0a] text-black dark:text-white ">
             Branding
           </span>
         </span>{" "}
@@ -45,12 +45,12 @@ const HeroHeading = () => {
             autoPlay
             muted
             loop
-            className="absolute z-[1] w-full h-full top-0 left-0 object-cover"
+            className="absolute z-[1] w-full h-full top-0 left-0 object-cover dark:hue-rotate-180 dark:brightness-200"
           >
             <source src="/videos/blue.webm" type="video/webm" />
             <source src="/videos/blue.mp4" type="video/mp4" />
           </video>
-          <span className="relative z-10 mix-blend-screen dark:mix-blend-multiply bg-background dark:bg-[#0a0a0a] text-black dark:text-white ">
+          <span className="relative z-10 mix-blend-lighten dark:mix-blend-multiply bg-background dark:bg-[#0a0a0a] text-black dark:text-white ">
             Cinematic Masterpieces!
           </span>
         </span>

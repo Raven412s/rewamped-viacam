@@ -18,11 +18,11 @@ const Home = () => {
       <Navbar />
       <Bounded className="relative">
         {/*Hero*/}
-        <Ratings
+        {/* <Ratings
           images={ratingImages}
           completedCount={125}
           className="left-1/2 relative -translate-x-1/2"
-        />
+        /> */}
         <HeroHeadlineWithSubHeadingAndGlow />
         <BentoGrid />
         <div className="space-y-8 py-20">
