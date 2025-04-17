@@ -45,11 +45,8 @@ const Navbar = () => {
                  shadow-lg shadow-black/10 rounded-lg transition-all"
     >
       <div className="flex items-center justify-between relative">
-        <div>
-          <NavMenu />
-        </div>
         <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+          className="
                      flex items-center gap-2 md:gap-5"
         >
           <Logo width={40} height={40} className="md:scale-125" />
@@ -62,14 +59,16 @@ const Navbar = () => {
             </p>
           </div>
         </div>
-        <div className="flex items-center sm:border sm:rounded-full gap-1">
-          <StyledButton className="px-4 py-2 rounded-l-full before:rounded-l-full hidden sm:block">
-            <span>Contact</span>
-          </StyledButton>
-          <span className="min-w-12 sm:border-l">
-            <ModeToggle className="bg-background hover:bg-muted rounded-full sm:rounded-r-full sm:rounded-l-none" />
-          </span>
+    <div className="flex space-x-2">
+    <div>
+          <NavMenu />
         </div>
+        <div className="flex items-center sm:border sm:rounded-full gap-1">
+          <StyledButton className="px-4 py-2 rounded-full before:rounded-full hidden sm:block">
+            <span>Contact Us</span>
+          </StyledButton>
+        </div>
+    </div>
       </div>
       <Separator className="mt-5" />
     </nav>

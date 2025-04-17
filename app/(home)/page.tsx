@@ -1,16 +1,15 @@
 "use client";
 
 import MarqueeText from '@/components/Global/Animated/MarqueeText';
-import Branding from '@/components/Global/Custom/Sections/Branding';
-import TabbedOrScrollingUI from '@/components/Global/Custom/TabbedOrScrollUI';
 import Bounded from '@/components/Global/HOC/Bounded';
 import Navbar from '@/components/Global/Navbar';
 import BentoGrid from '@/components/Global/root/section1/BentoGrid';
 import HeroHeadlineWithSubHeadingAndGlow from '@/components/Global/root/section1/HeroHeadlineWithSubHeadingAndGlow';
-import Ratings from '@/components/Global/root/section1/Ratings';
 import HeroHeading from '@/components/Global/root/section2/HeroHeading';
 import Production from '@/components/Global/root/section2/Production';
-import { ratingImages, services } from '@/data';
+import BusinessComplete from '@/components/Global/root/section3/BusinessComplete';
+import HeroHeading2 from '@/components/Global/root/section3/HeroHeading2';
+import { services } from '@/data';
 
 const Home = () => {
   return (
@@ -34,10 +33,13 @@ const Home = () => {
         </div>
         {/*Production*/}
         <HeroHeading/>
-      </Bounded>
-       {/* <Branding/> */}
-        <TabbedOrScrollingUI/>
+        </Bounded>
         <Production/>
+        <Bounded>
+            {/* Business Related */}
+            <HeroHeading2/>
+        </Bounded>
+        <BusinessComplete/>
     </main>
   );
 };

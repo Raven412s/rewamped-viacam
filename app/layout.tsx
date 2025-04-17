@@ -10,6 +10,7 @@ import {
   Old_Standard_TT,
 } from "next/font/google";
 import { ThemeProvider } from "@/components/Global/HOC/ThemeProvider";
+import Cursor from "@/components/Global/Custom/cursor/Cursor";
 
 // Import fonts
 const nunito = Nunito({
@@ -73,7 +74,29 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <SmoothScroll>
+            <Cursor/>
             {children}
+              {/* ✅ SVG Noise Filter (Must Be in DOM) */}
+                <svg width="0" height="0" className="hidden">
+                  <defs>
+                    <filter id="grains">
+                      <feTurbulence
+                        type="fractalNoise"
+                        baseFrequency="0.6"  // Lower value for softer grains (default: 0.9)
+                        numOctaves="1"  // Reduce to make noise less intense (default: 3)
+                        stitchTiles="stitch"
+                      />
+                      <feColorMatrix
+                        type="matrix"
+                        values="1 0 0 0 0
+                                0 1 0 0 0
+                                0 0 1 0 0
+                                0 0 0 0.3 0"  // Adjust last value for opacity (0.3 makes it subtle)
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+
           </SmoothScroll>
         </ThemeProvider>
       </body>

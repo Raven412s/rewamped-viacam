@@ -1,9 +1,9 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { productionSections } from "@/data";
+import { businessSections } from "@/data";
 import { cn } from "@/lib/utils";
-function HorizontalScroll() {
+function NegativeHorizontalScroll() {
   const sectionRef = useRef(null);
   const triggerRef = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
@@ -11,10 +11,10 @@ function HorizontalScroll() {
     const pin = gsap.fromTo(
       sectionRef.current,
       {
-        translateX: 0,
+        translateX: `${(businessSections.length - 1) *- 100}vw`,
       },
       {
-        translateX: `${(productionSections.length - 1) * -100}vw`,
+        translateX: 0 ,
         ease: "none",
         duration: 1,
         scrollTrigger: {
@@ -31,7 +31,6 @@ function HorizontalScroll() {
       pin.kill();
     };
   }, []);
-  console.log(productionSections.length * 100)
   return (
     <section className="overflow-hidden ">
       {/* The section up act just as a wrapper. If the trigger (below) is the
@@ -39,13 +38,13 @@ function HorizontalScroll() {
       {/* The div below act just as a trigger. As the doc suggests, the trigger and
       the animation should alway be two separated refs */}
       <div ref={triggerRef}>
-        <div ref={sectionRef} className={cn("h-screen  flex flex-row relative")}
+        <div ref={sectionRef} className={cn("h-screen  flex flex-row-reverse  relative")}
             style={{
-                width: `${productionSections.length * 100}vw`
+                width: `${businessSections.length * 100}vw`
             }}
         >
-            {productionSections.map((section,index)=>(
-          <div key={index} className="h-screen w-screen flex items-center justify-center">
+            {businessSections.map((section,index)=>(
+          <div key={index} className="h-screen max-w-screen-2xl flex items-center justify-center">
             {section.component}
           </div>
             ))}
@@ -55,4 +54,4 @@ function HorizontalScroll() {
   );
 }
 
-export default HorizontalScroll;
+export default NegativeHorizontalScroll;

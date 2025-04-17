@@ -3,19 +3,11 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import HorizontalScroll from "../Animated/HorizontalScroll";
-import { productionSections } from "@/data";
+import { businessSections, productionSections } from "@/data";
+import HorizontalScroll from "../../Animated/HorizontalScroll";
+import NegativeHorizontalScroll from "../../Animated/NegativeHorizontalScroll";
 
-
-
-const TabbedOrScrollingUI = () => {
-  const containerRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end start"],
-  });
-
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-200%"]); // Moves sections left
+const BusinessComplete = () => {
 
   return (
     <div className="relative w-full">
@@ -23,7 +15,7 @@ const TabbedOrScrollingUI = () => {
       <div className="block lg:hidden p-4">
         <Tabs defaultValue="branding">
           <TabsList className="grid grid-cols-3">
-            {productionSections.map((section) => section.title ? (
+            {businessSections.map((section) => section.title ? (
               <TabsTrigger key={section.id} value={section.id}>
                 {section.title.split(" ")[1]}
               </TabsTrigger>
@@ -39,11 +31,11 @@ const TabbedOrScrollingUI = () => {
 
     {/* Horizontal scroll section for Large screens */}
     <div className="hidden lg:block   relative z-10 ">
-    <HorizontalScroll />
+    <NegativeHorizontalScroll />
     </div>
 
     </div>
   );
 };
 
-export default TabbedOrScrollingUI;
+export default BusinessComplete;

@@ -18,7 +18,7 @@ const Branding = (props: Props) => {
           <h1 className="font-black uppercase font-display text-xl sm:text-2xl md:text-3xl">
             Branding services
           </h1>
-          <Logo />
+          {/* <Logo /> */}
         </div>
         <Separator />
       </div>
@@ -67,7 +67,7 @@ const Branding = (props: Props) => {
           ))}
         </GlowArea>
       </div>
-        <DotBg/>
+
 
       {/* Animated gradient underlays with position swapping */}
       <motion.div
